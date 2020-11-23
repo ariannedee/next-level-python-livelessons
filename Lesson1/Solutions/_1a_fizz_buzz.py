@@ -27,16 +27,16 @@ def fizz_buzz(n):
 assert_equals(fizz_buzz(1), 1)
 assert_equals(fizz_buzz(7), 7)
 assert_equals(fizz_buzz(3), "Fizz")
-assert_equals(fizz_buzz(6), "Fizz")
 assert_equals(fizz_buzz(5), "Buzz")
-assert_equals(fizz_buzz(20), "Buzz")
+assert_equals(fizz_buzz(6), "Fizz")
+assert_equals(fizz_buzz(10), "Buzz")
 assert_equals(fizz_buzz(15), "FizzBuzz")
-assert_equals(fizz_buzz(45), "FizzBuzz")
+assert_equals(fizz_buzz(30), "FizzBuzz")
 
-user_num = int(input("Enter a number: "))
+number = int(input("Enter a number: "))
 
 fizz_buzz_list = []
-for i in range(user_num):
+for i in range(number):
     fizz_buzz_list.append(fizz_buzz(i + 1))
 
 print(fizz_buzz_list)

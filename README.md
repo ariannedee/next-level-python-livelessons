@@ -9,7 +9,7 @@ To get started with this course, please follow these instructions:
 ## Set up instructions
 ### 3. Download the code
 If you're viewing this on GitHub already, stay on this page.
-Otherwise, go to the GitHub repository: https://github.com/ariannedee/intro-to-python
+Otherwise, go to the GitHub repository: https://github.com/ariannedee/next-level-python-livelessons
 
 #### If you know git:
 Clone the repository.
@@ -42,11 +42,14 @@ Follow the instructions here: [Add Python to PATH variable in Windows](docs/WINS
 ### 3. Set-up your IDE
 
 #### 3.1 Choose an IDE
-Throughout the course, I use the **PyCharm IDE** (*Community Edition*)
+Throughout the course, I use the **PyCharm IDE** (*Community Edition*).
 If you would like to use the same set-up, download it here:
-https://www.jetbrains.com/pycharm/download/
+https://www.jetbrains.com/pycharm/download/.
+**Note** that one section goes through using PyCharm and using its keyboard shortcuts. 
 
 Install, open, and use the default settings.
+
+
 Another good option, if you're a more experienced developer,
 is [**Visual Studio Code**](https://code.visualstudio.com/Download).
 
@@ -79,12 +82,15 @@ Once in Settings:
 1. In the pop-up, select the correct version, or enter the path for the desired Python version to run
 
 ## FAQs
-### Can I use Python 2?*
+### Can I use Python 2?
 No, Python 2 is out of date and any project you're working on should be written in Python 3 by now.
 
 ### Can I use a different code editor besides PyCharm?
 Yes, but it is only recommended if you are already know it and are comfortable navigating to different files and running commands in the command line. 
 Make sure to install the most popular Python plugin(s) for syntax highlighting and code completions that are available for your IDE.
+
+**Note** that part of the course is configuring PyCharm and using its shortcuts,
+so that lesson will not help much if you are using a different IDE.
 
 ### Do you offer private Python help?
 Yes, email **arianne.dee.studios at gmail.com** if you have any questions

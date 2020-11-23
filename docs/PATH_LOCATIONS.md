@@ -7,21 +7,21 @@ and which version is installed.
 
 ## Windows
 Look for `python.exe`
-- C:\Python37
-- C:\Program Files\Python37
-- C:\Users\\*username*\AppData\Local\Programs\Python\Python37-XX
+- C:\Python36
+- C:\Program Files\Python36
+- C:\Users\\*username*\AppData\Local\Programs\Python\Python36-XX
 
 ## Mac
-Look for `python3.7` or `python3`
+Look for `python3.6` or `python3`
 
 - /usr/local/bin
-- /Library/Frameworks/Python.framework/Versions/3.7/bin/
-- /usr/local/Cellar/python/3.7.X_X/bin/
+- /Library/Frameworks/Python.framework/Versions/3.6/bin/
+- /usr/local/Cellar/python/3.6.X_X/bin/
 - /Users/*username*/anaconda/bin/
 - /anaconda3/bin/
 
 ## Linux
-Look for `python3.7` or `python3`
+Look for `python3.6` or `python3`
 - /usr/bin/
 - /usr/local/bin
 
@@ -31,4 +31,4 @@ try searching google more specifically based on
 your Python version, operating system, and method of download.
 
 If you found it at another location, please email me at
-**arianne.dee.studios@gmail.com** so I can update this list.
+**arianne.dee.studios at gmail dot com** so I can update this list.

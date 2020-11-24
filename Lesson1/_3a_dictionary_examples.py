@@ -5,12 +5,9 @@ book_3 = {"title": "1984", "author": "George Orwell", "published_year": 1949}
 
 books = [book_1, book_2, book_3]
 
+for book in books:
+    print(f"{book['title']} was written by {book['author']} in {book['published_year']}")
 
-def book_sort_key(book):
-    return book['published_year']
-
-
-books.sort(key=lambda book: book['published_year'])
 
 # Dictionaries as maps
 canadian_capitals = {
@@ -35,7 +32,7 @@ canadian_capitals.values()  # ['Edmonton', 'Victoria', ...]
 print(canadian_capitals['ON'])  # Get an item
 del canadian_capitals['AB']  # Delete an item
 canadian_capitals['NU'] = 'Bob'  # Update an item
-canadian_capitals['XX'] = 'New capital'  # Add an item
+canadian_capitals['XX'] = 'New capital'  # Add a new item
 
 # Get value if the key exists, else return None
 print(canadian_capitals.get('AA'))

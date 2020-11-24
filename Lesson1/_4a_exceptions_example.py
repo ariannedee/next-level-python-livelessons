@@ -1,12 +1,9 @@
 try:
-    int('five')
-    print('Success!')
+    int(input("Enter a number: "))
+    print('Good number!')
 except ValueError as e:
-    print("Fail!")
+    print("Not a valid number")
     print(e)
 
 
 print('Got here')
-
-int('1.5')  # Run fails with exit code 1
-print("Didn't get here")

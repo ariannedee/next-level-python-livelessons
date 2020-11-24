@@ -11,12 +11,9 @@ code = {
 # Get a message from the user
 message = input("What is your message? ")
 
-# Translate user input into code of numbers
-coded_message = ''
+coded_message = ""
 for char in message.lower():
-    if char in code:
-        coded_message += str(code[char])
-    else:
-        coded_message += char
-    coded_message += ' '
+    coded_message += str(code.get(char, char))
+    coded_message += " "
+
 print(coded_message)

@@ -3,25 +3,25 @@ A program that takes a letter and prints
 all of the countries that start with that letter
 """
 
+countries = []
+
 # Read data/countries.txt and save all countries by starting letter
-countries = {}
-with open('data/countries.txt', 'r') as file:
+with open("data/countries.txt") as file:
     for line in file.readlines():
-        starting_letter = line[0]
-        country = line.strip()
-        if starting_letter not in countries:
-            countries[starting_letter] = []
-        countries[starting_letter].append(country)
+        countries.append(line.strip())
 
 # Get user to provide a letter
 letter = input('Number of countries that start with letter: ')
 letter = letter.capitalize()
 
 # Print the number of countries that start with the letter
-letter_countries = countries.get(letter, [])
-print(f'{len(letter_countries)} countries start with an {letter}')
+letter_countries = []
+for country in countries:
+    if country[0].upper() == letter:
+        letter_countries.append(country)
 
-# Create text file that lists the countries starting with the letter
-with open(f'data/{letter}_countries.txt', 'w') as file:
-    for country in letter_countries:
-        file.write(country + '\n')
+# Print the number of countries that start with the letter
+print(f"There are {len(letter_countries)} countries that start with the letter {letter}")
+
+# Print the countries that start with the letter
+print(letter_countries)

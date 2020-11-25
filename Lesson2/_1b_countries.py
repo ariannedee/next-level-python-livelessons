@@ -1,5 +1,5 @@
 """
-A program that takes a letter and outputs a text file of
+A program that takes a letter and prints
 all of the countries that start with that letter
 """
 
@@ -11,4 +11,4 @@ letter = letter.capitalize()
 
 # Todo: Print the number of countries that start with the letter
 
-# Todo: Create text file that lists the countries starting with the letter
+# Todo: Print the countries that start with the letter

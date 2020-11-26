@@ -1,6 +1,6 @@
 import csv
 
-with open('data/csv_example.csv', 'r') as file:
+with open('data/read_example.csv', 'r') as file:
     reader = csv.DictReader(file)
 
     for person in reader:

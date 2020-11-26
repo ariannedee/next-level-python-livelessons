@@ -5,7 +5,7 @@ all of the countries that start with that letter
 
 # Read data/countries.txt and save all countries by starting letter
 countries = {}
-with open('data/countries.txt', 'r') as file:
+with open('../data/countries.txt', 'r') as file:  # Remove the ../ if the data folder is a sibling of this file
     for line in file.readlines():
         starting_letter = line[0]
         country = line.strip()
@@ -24,4 +24,5 @@ print(f'{len(letter_countries)} countries start with an {letter}')
 # Create text file that lists the countries starting with the letter
 with open(f'data/{letter}_countries.txt', 'w') as file:
     for country in letter_countries:
-        file.write(country + '\n')
+        file.write(country)
+        file.write('\n')

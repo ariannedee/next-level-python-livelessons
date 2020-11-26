@@ -2,38 +2,39 @@
 A program that takes a continent and prints
 all of the countries on that continent
 """
-
-# Read data/continents.csv and save all countries by continent
 import csv
 
-countries = {}
-with open('../data/continents.csv', 'r') as file:
-    reader = csv.DictReader(file)
-    for line in reader:
-        continent = line['Continent']
-        if continent not in countries:
-            countries[continent] = []
-        countries[continent].append(line['Country'])
+continent_dict = {}
 
-continents = {
-    1: 'Africa',
-    2: 'Asia',
-    3: 'Europe',
-    4: 'North America',
-    5: 'Oceania',
-    6: 'South America'
-}
+# Read data/continents.csv and save all countries by continent
+with open("../data/continents.csv") as file:
+    reader = csv.DictReader(file)
+    for country in reader:
+        continent = country["Continent"]
+        if continent not in continent_dict:
+            continent_dict[continent] = []
+
+        continent_dict[continent].append(country["Country"])
+
+continents = [
+    'Africa',
+    'Asia',
+    'Europe',
+    'North America',
+    'Oceania',
+    'South America'
+]
 
 # Get user to provide a continent by inputting a number
 print('Choose a continent:')
 print('1: Africa, 2: Asia, 3: Europe, 4: North America, 5: Oceania, 6: South America')
-number = int(input())
-continent = continents.get(number)
+user_number = int(input())
+
+continent = continents[user_number - 1]
+continent_countries = continent_dict[continent]
 
 # Print the number of countries on that continent
-continent_countries = countries.get(continent, [])
-print(f'There are {len(continent_countries)} countries in {continent}')
+print(f"There are {len(continent_countries)} countries in {continent}")
 
 # Print each of the countries on that continent to the console
-for country in continent_countries:
-    print('  ' + country)
+print(continent_countries)

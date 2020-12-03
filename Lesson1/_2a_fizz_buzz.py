@@ -14,8 +14,6 @@ def assert_equals(actual, expected):
     assert actual == expected, f'Expected {expected}, got {actual}'
 
 
-print("Test change")
-
 # Todo: Write a function that returns:
 #  "Fizz" if the number is divisible by 3
 #  "Buzz" if the number is divisible by 5

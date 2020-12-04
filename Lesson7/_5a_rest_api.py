@@ -13,7 +13,7 @@ URL = BASE_URL + '/user/repos'  # The specific data we want
 headers = {
     'Accept': 'application/vnd.github.v3+json',
     'Content-Type': 'application/json',
-    'Authorization': 'token {Your token here}',  # See https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+    'Authorization': 'bearer {Your token here}',  # See https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 }
 
 # Make API request

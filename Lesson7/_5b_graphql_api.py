@@ -11,7 +11,7 @@ import sys
 API_URL = "https://api.github.com/graphql"
 headers = {
     'Content-Type': 'application/json',
-    'Authorization': 'token {Your token here}',  # See https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+    'Authorization': 'bearer {Your token here}',  # See https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 }
 
 # Specify the data you want from the API, test at https://developer.github.com/v4/explorer

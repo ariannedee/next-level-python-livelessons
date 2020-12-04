@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-LOGIN_URL = "https://github.com/session"
+LOGIN_URL = "https://github.com/login"
 USERNAME = "***"
 PASSWORD = "***"
 

@@ -10,4 +10,4 @@ from package.subpackage.sub_module import sub_module_func
 
 from .sub_module import sub_module_func  # relative import
 
-print('subpackage __init__ loaded')
+print('sub-package __init__ loaded')

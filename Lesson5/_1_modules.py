@@ -1,4 +1,4 @@
-from package.package_module import package_module_func
+from package.package_module import module_func
 from package.subpackage import sub_module_func
 
 
@@ -11,5 +11,5 @@ if __name__ == '__main__':
     print(sys.path)  # Python searches for modules here (in-order)
 
     func()
-    package_module_func()
+    module_func()
     sub_module_func()

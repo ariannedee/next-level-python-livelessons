@@ -1,2 +1,2 @@
-def package_module_func():
+def module_func():
     print('package module: ' + __name__)

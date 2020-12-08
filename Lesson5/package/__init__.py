@@ -1,2 +1,1 @@
-def package_func():
-    print('package init: ' + __name__)
+print('package __init__ loaded')

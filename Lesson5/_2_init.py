@@ -7,9 +7,6 @@ def func():
 
 
 if __name__ == '__main__':
-    import sys
-    print(sys.path)  # Python searches for modules here (in-order)
-
     func()
     module_func()
     sub_module_func()

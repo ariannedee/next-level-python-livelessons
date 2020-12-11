@@ -4,7 +4,7 @@ In terminal, run $ pytest
 """
 import pytest
 
-from .rock_paper_scissors_buggy import determine_winner, game_over, YOU, COMP
+from rock_paper_scissors_buggy import determine_winner, game_over, YOU, COMP
 
 
 @pytest.mark.parametrize("you, comp, expected_winner", [

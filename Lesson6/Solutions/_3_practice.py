@@ -1,8 +1,8 @@
 """
-format_number is a function that takes a number and returns it as a string with
-commas as the thousands separators
+This program takes a number and returns it as a string with commas as the
+thousands separators
 
-Basic practice: add tests and fix the function
+Basic practice: add tests and fix the code to handle positive whole numbers
 Extra practice: extend it to handle negative numbers and numbers with decimal places
 """
 from format_number import format_number

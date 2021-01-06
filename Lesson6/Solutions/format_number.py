@@ -1,12 +1,10 @@
 def format_number(num):
     as_string = ""
-    i = 0
-    for char in str(num):
-        if i % 3 == 1:
+    for i, char in enumerate(str(num)[::-1]):
+        if i >= 3 and i % 3 == 0:
             as_string += ','
         as_string += char
-        i += 1
-    return as_string
+    return as_string[::-1]
 
 
 if __name__ == "__main__":

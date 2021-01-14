@@ -54,21 +54,31 @@ print(dt.strftime("%B %d, %Y %-I:%M %p"))  # https://strftime.org/
 dt2 = datetime.datetime.strptime("March 14, 2001 1:59 AM", "%B %d, %Y %I:%M %p")
 print(f"{dt2.month}.{dt2.day}{dt2.hour}{dt2.minute}")  # PI day!
 
-# Doing math on datetimes using timedeltas
-time_diff = dt2 - dt
-print(time_diff.days)
-print(f'Diff in years: {round(time_diff.days/365.25, 2)}')
-print(time_diff.seconds)
 
-# Or you can compare year/month/day
-print(dt2.year - dt.year)
-
-# ------ CURRENT MOMENT ------
+# ------ CURRENT DAY/TIME ------
 print('\nNOW')
 now = datetime.datetime.now()
 print(now)
 print(now.date())
 print(now.time())
+
+
+# ------ TIME DELTAS ------
+# Timedeltas only have days, seconds, and microseconds
+print('\nTIME DELTAS')
+
+# You can compare year/month/day as ints
+print(dt2.year - dt.year)
+
+# Comparing datetimes returns a timedelta
+time_diff = dt2 - dt
+print(time_diff.days)
+print(f'Diff in years: {round(time_diff.days/365.25, 2)}')
+print(time_diff.seconds)
+
+# Using timedeltas to get a new date
+next_week = datetime.datetime.now() + datetime.timedelta(days=7)
+print(next_week)
 
 # ------ TIMING ------
 import time

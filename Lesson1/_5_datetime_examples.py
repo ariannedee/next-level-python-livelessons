@@ -1,6 +1,8 @@
 """
 Python's built-in datetime module
 https://docs.python.org/3/library/datetime.html
+
+Doesn't include timezone aware examples
 """
 import datetime
 
@@ -67,3 +69,12 @@ now = datetime.datetime.now()
 print(now)
 print(now.date())
 print(now.time())
+
+# ------ TIMING ------
+import time
+
+start = time.time()
+time.sleep(1.2)  # Do some stuff here
+end = time.time()
+
+print(f"Function took {end - start}s")

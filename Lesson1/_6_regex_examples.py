@@ -6,11 +6,27 @@ PyCharm: https://www.jetbrains.com/help/pycharm/regular-expression-syntax-refere
 import re
 
 
-assert re.search(r"world", "Hello world")  # Search looks anywhere inside the string
-assert not re.match(r"world", "Hello world")  # Match looks at the start of the string
-assert re.match(r"Hello", "Hello world")  # Match looks at the start of the string
+# The match object holds information about the result
+match = re.search(r"world", "Hello world")
+assert match.start() == 6  # Start index of where the result was found
 
 
+# Search looks anywhere inside the string and only returns a match for the first instance
+assert re.search(r"world", "Hello world")
+assert re.search(r"l", "Hello world").start() == 2
+
+
+# Match only looks at the start of the string
+assert not re.match(r"world", "Hello world")
+assert re.match(r"Hello", "Hello world")
+
+
+# You can ignore case
+assert not re.search('hello', 'Hello world')
+assert re.search('hello', 'Hello world', re.IGNORECASE)
+
+
+# Validation example
 valid_zip_code = r'[0-9]{5}'
 assert re.fullmatch(valid_zip_code, '90210')
 assert not re.fullmatch(valid_zip_code, '9021')
@@ -21,10 +37,6 @@ assert not re.fullmatch(valid_zip_code, '9021a')
 # Note: \w+ finds all of the words (set of 1 or more alpha characters)
 list_of_matches = re.findall(r'\w+', "The quick brown fox jumped over the lazy dog")
 print(list_of_matches)
-
-
-assert not re.search('hello', 'Hello world')
-assert re.search('hello', 'Hello world', re.IGNORECASE)
 
 
 print(re.sub(r'[aeiou]', '_', 'Hello world'))  # Replace with a static string
